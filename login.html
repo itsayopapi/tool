@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook – log in or sign up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      background: #f0f2f5;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1c1e21;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 980px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      align-items: center;
+    }
+
+    .left-section h1 {
+      font-size: 58px;
+      color: #1877f2;
+      margin-bottom: 12px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .left-section p {
+      font-size: 28px;
+      line-height: 1.4;
+      max-width: 500px;
+      color: #1c1e21;
+    }
+
+    .login-card {
+      background: #fff;
+      padding: 14px 16px 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .login-form input {
+      height: 52px;
+      padding: 15px;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 1rem;
+      outline: none;
+      transition: 0.2s ease;
+    }
+
+    .login-form input:focus {
+      border-color: #1877f2;
+      box-shadow: 0 0 0 2px rgba(24,119,242,0.2);
+    }
+
+    .login-btn {
+      height: 48px;
+      background: #1877f2;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .login-btn:hover {
+      background: #166fe5;
+    }
+
+    .forgot {
+      text-align: center;
+      text-decoration: none;
+      color: #1877f2;
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+
+    .forgot:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #dadde1;
+      margin: 10px 0 20px;
+    }
+
+    .create-btn {
+      height: 48px;
+      background: #42b72a;
+      color: white;
+      border: none;
+      padding: 14px 18px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      width: fit-content;
+      margin: 0 auto;
+      transition: 0.2s ease;
+    }
+
+    .create-btn:hover {
+      background: #36a420;
+    }
+
+    .bottom-text {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #606770;
+    }
+
+    .bottom-text strong {
+      color: #1c1e21;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 15px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #65676b;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        gap: 30px;
+        text-align: center;
+      }
+
+      .left-section h1 {
+        font-size: 3rem;
+      }
+
+      .left-section p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left-section">
+      <h1 style="font-family: Helvetica, Arial, sans-serif; font-weight: 700;">facebook</h1>
+      <p>
+        Facebook helps you connect and share with the people in your life.
+      </p>
+    </div>
+
+    <div>
+      <div class="login-card">
+        <form class="login-form">
+          <input type="text" placeholder="Email address or phone number" required>
+          <input type="password" placeholder="Password" required>
+
+          <button type="submit" class="login-btn">Log In</button>
+
+          <a href="#" class="forgot">Forgotten password?</a>
+
+          <hr>
+
+          <button type="button" class="create-btn">Create new account</button>
+        </form>
+      </div>
+
+      <div class="bottom-text">
+        <strong><strong>Create a Page</strong> for a celebrity, brand or business.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Meta © 2026
+  </div>
+
+</body>
+</html>
